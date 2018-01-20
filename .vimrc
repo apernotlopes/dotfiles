@@ -2,8 +2,14 @@
 " .vimrc  -  started 27 oct 2017
 " ------------------------------
 
+execute pathogen#infect()
+
 filetype plugin indent on " Enables filetype specific indenting and autocompletion
 syntax enable
+
+set background=dark
+
+set t_Co=256
 
 set tabstop=4 " number of visual spaces per TAB in docs read
 

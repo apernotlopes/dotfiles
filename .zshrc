@@ -1,8 +1,12 @@
 # If you come from bash you might have to change your $PATH.
- export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/megaqueijo/.oh-my-zsh
+export ZSH=/home/megaqueijo/.oh-my-zsh
+
+# Hostname
+export HOSTNAME="megaqueijo-pc"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,7 +55,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,12 +66,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# Preferred editor 
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -86,3 +86,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias todo="cat ~/todo"
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
+alias tmux="tmux -2"
+alias godot="/opt/Godot_3.0_RC1/Godot_v3.0-rc1_x11.64"
